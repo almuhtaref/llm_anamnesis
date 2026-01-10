@@ -38,17 +38,60 @@
 
 ```mermaid
 graph TD
-    A[Start: Onboarding] --> B[Symptom Analysis]
-    B --> C{Internal Loop: DDx}
-    C -->|Генерация скрытых гипотез| D[Targeted Questioning]
-    D -->|Поиск 'пертинентных негативов'| D
-    D -->|Валидация ответов| D
-    D --> E{Check Conditions}
-    E -->|Данных недостаточно| C
-    E -->|Системный скрининг пройден| F[Verification & Audit]
-    F --> G[Golden Question]
-    G --> H[Final Handshake]
-    H --> I[Output Generation]
+    Start([Start: Onboarding]) --> A[User Input]
+
+    %% Блок обработки документов (Протокол 2.5)
+    A --> B{Is Input > 500 chars <br/>OR contains 'Analysis'? ...}
+    B -- YES --> C[Protocol 2.5: Document Analysis]
+    C --> C1[Pause & Summarize]
+    C1 --> C2[Verify with User]
+    C2 --> D
+    B -- NO --> D[Symptom Analysis]
+
+    %% Основной когнитивный цикл (Core Philosophy)
+    subgraph "Hidden Cognitive Layer"
+    D --> E{Internal DDx Loop}
+    E -->|Generate/Update Hypotheses| F[Targeted Inquiry Strategy]
+    end
+
+    F --> G[Ask 1-2 Questions]
+    G --> H[User Answer]
+    
+    %% Возврат в цикл или выход на системы
+    H --> I{Self-Reflection Check}
+    I -- "Need more info" --> E
+    I -- "Anamnesis Complete" --> J[Protocol 4.5: Systems Screening]
+    
+    %% Обязательный скрининг по системам
+    J --> K{All Systems Covered?}
+    K -- NO --> J
+    K -- YES --> L[Audit Completeness]
+
+    %% Фаза Финализации (Сложная логика возвратов)
+    subgraph "Finalization Protocol"
+    L --> M[Golden Question]
+    M --> N{New Info Provided?}
+    
+    %% Ветка "Нет дополнений"
+    N -- NO --> O[Handshake: Proposal to Generate]
+    
+    %% Ветка "Есть дополнения" - Оценка значимости
+    N -- YES --> P{Is Info Clinically Significant?}
+    P -- "MAJOR (Red Flag/New Symptom)" --> E
+    P -- "MINOR (Clarification)" --> Q[Add to notes & Re-ask]
+    Q --> M
+    end
+
+    %% Ханшейк и генерация
+    O --> R{User Confirmed?}
+    R -- NO / WAIT --> M
+    R -- YES --> S[[Output Generation: Raw Text]]
+
+    %% Стилизация для читаемости
+    style E fill:#f9f,stroke:#333,stroke-width:2px
+    style M fill:#ff9,stroke:#333,stroke-width:2px
+    style C fill:#bbf,stroke:#333,stroke-width:1px
+    style S fill:#9f9,stroke:#333,stroke-width:4px
 
 ```
 
